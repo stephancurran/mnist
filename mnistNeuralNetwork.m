@@ -9,8 +9,8 @@ testSetSize = totalExamples - m; # number of test examples
 
 X_train = data(1:m, 2:end); # training set
 y_train = data(1:m, 1); # training labels
-X_test = data(trainSize + 1:totalExamples, 2:end); # test set
-y_test = data(trainSize + 1:totalExamples, 1); # test labels
+X_test = data(m + 1:totalExamples, 2:end); # test set
+y_test = data(m + 1:totalExamples, 1); # test labels
 
 n = size(X_train)(2); # number of features
 alpha = 0.01; # learning rate
